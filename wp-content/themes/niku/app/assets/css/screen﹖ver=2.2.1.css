@@ -6839,7 +6839,7 @@ uncomment this part if you haven't added this code anywhere else
             flex: 1; }
       .featured-menu-slider-container .slide .slide-menu-content .menu-item-title {
         margin: 0 0 5px;
-        font-size: 18px;
+        font-size: 22px;
         line-height: normal;
         font-weight: 400; }
         .featured-menu-slider-container .slide .slide-menu-content .menu-item-title a {
@@ -6898,7 +6898,8 @@ uncomment this part if you haven't added this code anywhere else
   margin-bottom: 15px;
   font-weight: 400; }
   .product-category-list .category-name a {
-    color: #a7b3bc; }
+    color: #a7b3bc;
+  font-weight: 800; }
   .product-category-list .category-name:after {
     content: " ";
     height: 10px;
@@ -6937,7 +6938,8 @@ uncomment this part if you haven't added this code anywhere else
   .product-category-list ul .product-title {
     margin: 0 0 10px;
     color: #24292d;
-    font-size: 18px;
+    font-size: 20px;
+    padding-top: 30px;
     font-weight: 400;
     line-height: 1.4; }
   .product-category-list ul .product-short-desc {
@@ -6965,8 +6967,19 @@ uncomment this part if you haven't added this code anywhere else
       overflow: hidden;
       color: #24292d;
       font-weight: 700;
+      padding-top: 30px;
+      font-size: 22px;
       font-size: 18px;
       display: inline-block; }
+
+      @media screen and (max-width: 767px) {
+        .product-category-list ul .price .amount {
+          padding-top: 0px;
+        }
+        .product-category-list ul .product-title {
+          padding-top: 20px;
+        }
+      }
     .product-category-list ul .price sup {
       font-weight: 300;
       position: relative;
